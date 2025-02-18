@@ -55,7 +55,9 @@ I am not a big fan of the PIXIE DE or Wayland. If you want to change your DE to 
 If you are going to be using your HPi 5 in public places, you will want to take some steps to secure it from bad actors. Before you enable the firewall, you will want to allow ssh connections through your firewall so you can connect to it remotely.
 
 > sudo apt install ufw
+>
 > sudo ufw allow ssh
+>
 > sudo ufw enable
 
 ### 7. Secure ssh access to your system
@@ -79,6 +81,7 @@ Search for the line "#PasswordAuthentication yes", delete the # and change yes t
 Raspberry Pi OS has the same issue as Debian, the packages tend to fall behind long before a new release is made. If you have programs that you want to stay up to date on, Flatpak is the way to do it.
 
 > sudo apt install flatpak
+>
 > flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 Now you can install programs from the Flatpak repo, which will be more up to date without breaking your install. For instance, if you want to install Discord, run the following;
