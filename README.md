@@ -6,19 +6,15 @@ This is a very similar to the article I wrote about the Clockworkpi uConsole and
 
 Whether you get your HPi 5 from Tidie or Elecrow, it is going to take a week or two to get. While you are waiting, make sure you have the other things you need to complete the build. If you got it from Tindie, it will not come with a Raspberry Pi 5, power supply or batteries. None of these things is hard to come by.
 
-Raspberry Pi 5, 8GB Model
-https://www.adafruit.com/product/5813
+[Raspberry Pi 5, 8GB Model](https://www.adafruit.com/product/5813)
 
-Canakit RPi Power Supply
-https://www.amazon.com/dp/B07TYQRXTK?ref=ppx_yo2ov_dt_b_fed_asin_title
+[Canakit RPi Power Supply](https://www.amazon.com/dp/B07TYQRXTK?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
-18650 Rechargeable Battery, 3000mAh
-https://www.amazon.com/dp/B0CRNSFQGX?ref=ppx_yo2ov_dt_b_fed_asin_title
+[18650 Rechargeable Battery, 3000mAh](https://www.amazon.com/dp/B0CRNSFQGX?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
 Both versions should come with SD cards, but they come with 32GB SD cards, which is really too small. I think 128GB is minimum needed for any device you are going to regularly use, but 256GB is better.
 
-256GB SD Card
-https://www.amazon.com/dp/B09X7CRKRZ?ref=ppx_yo2ov_dt_b_fed_asin_title
+[256GB SD Card](https://www.amazon.com/dp/B09X7CRKRZ?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
 If you are getting it from Elecrow, it shoud come with the RPi 5 and batteries, you will only need the power supply. But please read the included components, so you know what you need.
 
@@ -26,11 +22,9 @@ If you are getting it from Elecrow, it shoud come with the RPi 5 and batteries, 
 
 This is not neccessary, however for less than $60 this is the single best upgrade money can buy to improve the performace of your device. SSD's are faster and more reliable than SD cards. You will need both the adapter and the SSD. The adapter also adds active cooling to the device.
 
-Waveshare PCIe to M.2 Adapter Board (E)
-https://www.amazon.com/dp/B0DBZ6PWF6?ref=ppx_yo2ov_dt_b_fed_asin_title
+[Waveshare PCIe to M.2 Adapter Board (E)](https://www.amazon.com/dp/B0DBZ6PWF6?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
-256GB NVMe 2230 SSD
-https://www.amazon.com/dp/B0DKBHTCTS?ref=ppx_yo2ov_dt_b_fed_asin_title
+[256GB NVMe 2230 SSD](https://www.amazon.com/dp/B0DKBHTCTS?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
 ### 3. Update your system
 
