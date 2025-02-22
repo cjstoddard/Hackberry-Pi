@@ -12,7 +12,7 @@ Whether you get your HPi 5 from Tidie or Elecrow, it is going to take a week or 
 
 [18650 Rechargeable Battery, 3000mAh](https://www.amazon.com/dp/B0CRNSFQGX?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
-Both versions should come with SD cards, but they come with 32GB SD cards, which is really too small. I think 128GB is minimum needed for any device you are going to regularly use, but 256GB is better.
+Both versions should come with SD cards, but they come with 64GB SD cards, which is exceptable, but I think 128GB is minimum needed for any device you are going to regularly use, but 256GB is better.
 
 [256GB SD Card](https://www.amazon.com/dp/B09X7CRKRZ?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
