@@ -32,7 +32,7 @@ It is true, there are expansion boards you can get to give the uConsole more por
 
 While I am discussing I/O, I would also point out that the WiFi implentation on the uConsole is problematic. By default the antenna is mounted to the case via a sticky piece of plastic film, this barely works and in very common situations, fails entirely. There are a few ways to fix it, but the reality is you have to mount an external antenna to get reliable WiFi. With the Hackberry Pi 5, Wifi works perfectly well by default, out of the box without the need for any modifications.
 
-The keyboards on both devices I consider to be adequate for the job. I am Gen X, I did not grow up thumb typing, so both keyboards are awkwared for me, but both are usable. I would give uConsole an edge here, simply because it is slightly larger.
+The keyboards on both devices I consider to be adequate for the job. I am Gen X, I did not grow up thumb typing, so both keyboards are awkwared for me, but both are usable. I would give uConsole an edge here, because it is larger and does not require using the sym button to access commonly used keys.
 
 I want to preface this next part by saying the maintainer of the Community uConsole OS is an amazing man doing gods work. Nothing I say here is meant to cast shade on his work. He is doing the best he can with little to no support from either Clockworkpi or the Raspberry Pi Foundation, and what he is doing is nothing short of spectactular. Someone please buy this man a steak dinner, I will chip in.
 
