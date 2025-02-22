@@ -46,6 +46,12 @@ I am not a big fan of the PIXIE DE or Wayland. If you want to change your DE to 
 
 > sudo tasksel
 
+The default display manager is configured in such a way as to not let you change desktop environments, so you will need to install sddm
+
+> sudo apt install sddm
+
+and then run raspi-config and set the login to require a user password.
+
 ### 6. Setup Firewall
 
 If you are going to be using your HPi 5 in public places, you will want to take some steps to secure it from bad actors. Before you enable the firewall, you will want to allow ssh connections through your firewall so you can connect to it remotely.
