@@ -18,6 +18,8 @@ Both versions should come with SD cards, but they come with 64GB SD cards, which
 
 If you are getting it from Elecrow, it shoud come with the RPi 5 and batteries, you will only need the power supply. But please read the included components, so you know what you need.
 
+A tip for assembly, if you assemble it and don't get video after waiting 5-10 minutes, chances are good you didn't line up the GPIO contacts properly. Remove the cover to the Raspberry Pi 5 and remove the standoff screws. If you did not remove the piece of plastic that came inside the HPi, take it out now and throw it away. Now place the Raspberry Pi 5 back in and put the bottom left stand off screw in first, tighten it down and then back it of 2 or 3 turns. Then put in the right stand off screw, tighten it down and then back it of 2 or 3 turns. The Raspberry Pi 5 shouold have just a little bit of wiggle, move it around until you feel the pogo pins snap into place, you should feel and hear it. Then tighten the screws down and put in the top two. Put the cover back on and try to boot it up again, you should get video.
+
 ### 2. Get an NVMe SSD for your HPi 5
 
 This is not neccessary, however for less than $60 this is the single best upgrade money can buy to improve the performace of your device. SSD's are faster and more reliable than SD cards. You will need both the adapter and the SSD. The adapter also adds active cooling to the device.
@@ -25,6 +27,19 @@ This is not neccessary, however for less than $60 this is the single best upgrad
 [Waveshare PCIe to M.2 Adapter Board (E)](https://www.amazon.com/dp/B0DBZ6PWF6?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
 [256GB NVMe 2230 SSD](https://www.amazon.com/dp/B0DKBHTCTS?ref=ppx_yo2ov_dt_b_fed_asin_title)
+
+If you get this board, you can set up to 4 fan speeds to use based on the temp of the CPU. Enter the following command; 
+
+> sudo nano /boot/firmware/config.txt
+
+Now add these lines under the CM5 section.
+
+> dtparam=fan_temp0=40000,fan_temp0_hyst=2000,fan_temp0_speed=100
+> dtparam=fan_temp1=50000,fan_temp1_hyst=3000,fan_temp1_speed=150
+> dtparam=fan_temp2=60000,fan_temp2_hyst=4000,fan_temp2_speed=200
+> dtparam=fan_temp3=70000,fan_temp3_hyst=5000,fan_temp3_speed=250
+
+40000 equals roughly 40C CPU temp, 50000 equals roughly 50C CPU temp, etc. The top speed of the fan is 255, adjust to taste. Now save and exit the file, and reboot.
 
 ### 3. Update your system
 
