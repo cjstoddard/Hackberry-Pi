@@ -1,10 +1,8 @@
-# Ten things to do with your Hackberry Pi 5
+# Ten things to do with your Hackberry Pi 5 (HPi 5)
 
-This is a very similar to the article I wrote about the Clockworkpi uConsole and covers a lot of the same territory. If you have already read that article, you will find there is overlapping information, that is because both of these devices are very similr in nature and fill the same niche between a smart phone and laptop.
+### 1. Before you get your HPi 5
 
-### 1. Before you get your Hackberry Pi 5
-
-Whether you get your HPi 5 from Tidie or Elecrow, it is going to take a week or two to get. While you are waiting, make sure you have the other things you need to complete the build. If you got it from Tindie, it will not come with a Raspberry Pi 5, power supply or batteries. None of these things is hard to come by.
+Whether you get your HPi 5 from Tindie or Elecrow, it is going to take a week or two to get. While you are waiting, make sure you have the other things you need to complete the build. If you got it from Tindie, it will not come with a HPi 5, power supply or batteries. None of these things is hard to come by. Keep in mind, none of the products I link here should be considered best in class, they are simply what I bought and seem to work for me.
 
 [Raspberry Pi 5, 8GB Model](https://www.adafruit.com/product/5813)
 
@@ -12,17 +10,15 @@ Whether you get your HPi 5 from Tidie or Elecrow, it is going to take a week or 
 
 [18650 Rechargeable Battery, 3000mAh](https://www.amazon.com/dp/B0CRNSFQGX?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
-Both versions should come with SD cards, but they come with 64GB SD cards, which is exceptable, but I think 128GB is minimum needed for any device you are going to regularly use, but 256GB is better.
+Both versions should come with SD cards, but they come with 64GB SD cards, which is fine, but I think 128GB is minimum needed for any device you are going to regularly use, but 256GB is better.
 
 [256GB SD Card](https://www.amazon.com/dp/B09X7CRKRZ?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
-If you are getting it from Elecrow, it shoud come with the RPi 5 and batteries, you will only need the power supply. But please read the included components, so you know what you need.
-
-A tip for assembly, if you assemble it and don't get video after waiting 5-10 minutes, chances are good you didn't line up the GPIO contacts properly. Remove the cover to the Raspberry Pi 5 and remove the standoff screws. If you did not remove the piece of plastic that came inside the HPi, take it out now and throw it away. Now place the Raspberry Pi 5 back in and put the bottom left stand off screw in first, tighten it down and then back it off 1 or 2 turns. Then put in the right stand off screw, tighten it down and then back it off 1 or 2 turns. The Raspberry Pi 5 should have just a little bit of wiggle, move it around until you feel the pogo pins snap into place, you should feel it click. Then tighten both screws down and put in the top two screws and tighten them down. Put the cover back on and try to boot it up again, you should get video.
+If you are getting it from Elecrow, it should come with the RPi 5 and batteries, you will only need the power supply. But please read the included components, so you know what you need.
 
 ### 2. Get an NVMe SSD for your HPi 5
 
-This is not neccessary, however for less than $60 this is the single best upgrade money can buy to improve the performace of your device. SSD's are faster and more reliable than SD cards. You will need both the adapter and the SSD. The adapter also adds active cooling to the device.
+This is not necessary, however for less than $60 this is the single best upgrade money can buy to improve the performance of your device. SSD's are faster and more reliable than SD cards. You will need both the adapter and the SSD. The adapter also adds active cooling to the device.
 
 [Waveshare PCIe to M.2 Adapter Board (E)](https://www.amazon.com/dp/B0DBZ6PWF6?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
@@ -57,7 +53,7 @@ The first set of programs are text mode programs that I find useful, the second 
 
 ### 5. Change Desktop Environment (DE)
 
-I am not a big fan of the PIXIE DE or Wayland. If you want to change your DE to something else, use Tasksel to install the DE of your choice. I would also select Debian desktop environment, this will install things like LibreOffice and GIMP, but if you prefer a minimal setup, then leave it unchecked.
+I am not a big fan of the PIXIE DE or Wayland. If you want to change your DE to something else, use Tasksel to install the DE of your choice. I would also select Debian desktop environment, this will install programs commonly used with Desktop computers, but if you prefer a minimal setup, then leave it unchecked.
 
 > sudo tasksel
 
@@ -115,11 +111,11 @@ Move logging to a RAM disk: One way to help reduce the number of writes to your 
 
 https://github.com/azlux/log2ram
 
-Sync browser related directories to RAM: Continuing with the theme of minimizing wear and tear on your SD card, you can move the temporary files your browser creates to RAM. Again, this reduces the amount of RAM you have availble, so if you are running on 4GB of RAM, the extrs bite out of your RAM may be a bit more than you would like. Pay attention to your RAM usage after installing this software, if you are consistantly dipping into swap after installing it, you are probably not getting any benefit from using it. If you are using an 8GB CM, this should not be much of an issue for you.
+Sync browser related directories to RAM: Continuing with the theme of minimizing wear and tear on your SD card, you can move the temporary files your browser creates to RAM. Again, this reduces the amount of RAM you have available, so if you are running on 4GB of RAM, the extra bite out of your RAM may be a bit more than you would like. Pay attention to your RAM usage after installing this software, if you are consistently dipping into swap after installing it, you are probably not getting any benefit from using it. If you are using an 8GB CM, this should not be much of an issue for you.
 
 https://github.com/64-bitman/browser-on-ram
 
-Move swap file to RAM disk: Another useful tool for reducing SD card wear is zram-swap-config, this moves your swap file to a RAM disk as well. I am ambivelent towards this idea, it removes your swap file to RAM, but it reduces the amount of RAM availble, however the only reason your system dips into swap is when it is close to running out of RAM, so this idea seems counter productive to me. Personally, I don't use it, not just because of what I stated earlier, but also I don't remember the last time any Linux machine I have actually using swap. I would run htop and do normal things with you machine and watch the available memory and note how often you dip into swap memory. If you consistantly do not use more than three quarters of your available RAM, you likely do not need this.
+Move swap file to RAM disk: Another useful tool for reducing SD card wear is zram-swap-config, this moves your swap file to a RAM disk as well. I am ambivalent towards this idea, it removes your swap file to RAM, but it reduces the amount of RAM available, however the only reason your system dips into swap is when it is close to running out of RAM, so this idea seems counter productive to me. Personally, I don't use it, not just because of what I stated earlier, but also I don't remember the last time any Linux machine I have actually using swap. I would run htop and do normal things with you machine and watch the available memory and note how often you dip into swap memory. If you consistently do not use more than three quarters of your available RAM, you likely do not need this.
 
 https://github.com/StuartIanNaylor/zram-swap-config
 
