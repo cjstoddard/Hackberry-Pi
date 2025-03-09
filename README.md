@@ -122,3 +122,6 @@ https://github.com/StuartIanNaylor/zram-swap-config
 ### 10. Screen protector and a carrying case.
 
 These things are expensive after all is said and done. Screens get scratched and accidental drops happen. Preserve your investment by finding screen protectors and a carrying case, especially if you plan to use the device outside of safe environments. I have not found any products I am satisfied with yet, but when I do, I will add them here.
+
+Screen Protector for HPi 5:
+[BoxWave Screen Protector Compatible with Waveshare Square Capacitive Touch Screen (4 in)](https://www.amazon.com/dp/B0CWWH8FBM?)
